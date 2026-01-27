@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  docker-monitor:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./state.json:/app/state.json
+    env_file:
+      - .env
