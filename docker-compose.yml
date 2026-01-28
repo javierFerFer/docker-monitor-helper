@@ -1,7 +1,7 @@
 version: '3.9'
 services:
   docker-monitor:
-    image: docker-monitor-helper:latest
+    image: javidev99/docker-monitor-helper:latest
     container_name: docker-monitor-helper
     restart: unless-stopped
     ports:
