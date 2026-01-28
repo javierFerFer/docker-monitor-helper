@@ -10,7 +10,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./state:/app/state
     environment:
-      SMTP_HOST: smtp.gmail.com // or another provider
+      SMTP_HOST: smtp.gmail.com
       SMTP_PORT: 587
       SMTP_USER: user_to_send_notifications@gmail.com
       SMTP_PASS: // password app to use SMTP_USER account to send notifications
