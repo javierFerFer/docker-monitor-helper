@@ -26,9 +26,6 @@ RUN npm ci --omit=dev
 # Copy built code from builder
 COPY --from=builder /app/dist ./dist
 
-# Optional: copy state folder if needed
-COPY --from=builder /app/state ./state
-
 ENV NODE_ENV=production
 
 CMD ["node", "dist/main.js"]
