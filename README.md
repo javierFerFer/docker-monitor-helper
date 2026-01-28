@@ -75,11 +75,11 @@ This will stop and remove the container but **keep your `state` folder** for fut
 
 | Variable                 | Description                                         | Example                                       |
 | ------------------------ | --------------------------------------------------- | --------------------------------------------- |
-| `MAIL_HOST`              | SMTP server host                                    | smtp.gmail.com                                |
-| `MAIL_PORT`              | SMTP server port                                    | 587                                           |
-| `MAIL_USER`              | Email username                                      | [myemail@gmail.com](mailto:myemail@gmail.com) |
-| `MAIL_PASS`              | Email password / app password                       | secret                                        |
-| `MAIL_TO`                | Recipient email for alerts                          | [alert@example.com](mailto:alert@example.com) |
+| `SMTP_HOST`              | SMTP server host                                    | smtp.gmail.com                                |
+| `SMTP_PORT`              | SMTP server port                                    | 587                                           |
+| `SMTP_USER`              | Email username                                      | [myemail@gmail.com](mailto:myemail@gmail.com) |
+| `SMTP_PASS`              | Email password / app password                       | secret                                        |
+| `EMAIL_TO`                | Recipient email for alerts                          | [alert@example.com](mailto:alert@example.com) |
 | `EMAIL_FROM`             | Sender email address                                | [myemail@gmail.com](mailto:myemail@gmail.com) |
 
 ## Notes
