@@ -1,10 +1,17 @@
 version: '3.9'
 services:
   docker-monitor:
+    container_name: docker-monitor-helper
     build: .
     restart: unless-stopped
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./state.json:/app/state.json
-    env_file:
-      - .env
+      - ./state:/app/state
+    environment:
+      APP_VERSION: 0.0.2
+      SMTP_HOST: smtp.gmail.com // or another provider
+      SMTP_PORT: 587
+      SMTP_USER: user_to_send_notifications@gmail.com
+      SMTP_PASS: // password app to use SMTP_USER account to send notifications
+      EMAIL_FROM: // same as SMTP_USER
+      EMAIL_TO: // who is going to receive the notification

@@ -1,4 +1,7 @@
-FROM node:22.0.0
+FROM node:22-alpine
+
+ARG APP_VERSION
+ENV APP_VERSION=${APP_VERSION}
 
 WORKDIR /app
 
