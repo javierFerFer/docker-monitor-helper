@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { ScheduleModule } from '@nestjs/schedule';
-import { MonitorModule } from './areas/monitor/monitor.module';
-import { VersionModule } from './areas/version/version.module';
+import { MonitorModule } from './monitor/monitor.module';
+import { VersionModule } from './version/version.module';
 
 @Module({
   imports: [
