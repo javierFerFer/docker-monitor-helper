@@ -15,4 +15,12 @@ export class LoggerService {
   public log(text: string) {
     this.logger.log(text);
   }
+
+  public info(text: string) {
+    this.logger.log(`[Info] ${text}`);
+  }
+
+  public error(text: string, error?: undefined) {
+    this.logger.error(`[error] ${text}  ${error ? 'Error: ' + error : ''}`);
+  }
 }
